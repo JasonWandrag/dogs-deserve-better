@@ -80,26 +80,42 @@ width: 75vw;
 /*###############carousel###############*/
 .carousel{
     text-align: center;
-
+    margin: 3%;
+    padding: 3%;
     height: 300px;
     width: 75vw;
     margin-top: 30px;
     position: relative;
+    border: 5px solid #000;
 
 }
 
-.carousel h2{
+.carousel::after {
+  content: "";
+  background-image: url('../img/banner/banner-1.jpg');
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.carousel h1{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    font-weight: bolder;
 }
 
-.carousel h4{
+.carousel h3{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    font-weight: bolder;
 }
 
 /*navbar*/
