@@ -1,0 +1,159 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    width: 100vw;
+    /*overflow: hidden;*/
+    margin: 0;
+    padding: 0;
+
+    background: #1f263b;
+    background: -moz-linear-gradient(top, #1f263b 0%, #fff 100%);
+    background: -webkit-linear-gradient(top, #1f263b 0%,#fff 100%);
+    background: linear-gradient(to bottom, #1f263b 0%,#fff 100%);
+    background-repeat: no-repeat;
+}
+
+div.absolute-center {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    opacity: 1;
+    visibility: visible;
+
+    transition: all .5s;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box;
+    color: #000;
+    /*background: rgba(255, 255, 255, 1);*/
+    /*box-shadow: 0 0 5px 0 black;*/
+
+    font-family: 'Open Sans';
+    /*font-weight: 300;*/
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+span#close {
+    position: absolute;
+    top: -15px;
+    left: -30px;
+
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 5px black;
+
+    cursor: pointer;
+}
+
+canvas {
+    //border: 2px solid;
+    height: 100%;
+}
+
+hr{
+    border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.text-underlay{
+    border: 5px solid #000;
+background-color: rgba(255, 255, 255, 0.8);
+margin: 3%;
+padding: 3%;
+width: 75vw;
+}
+
+/*###############carousel###############*/
+.carousel{
+    text-align: center;
+
+    height: 300px;
+    width: 75vw;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+.carousel h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel h4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*navbar*/
+#navigation ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    /*background-color: #333;*/
+}
+
+#navigation li {
+    float: left;
+    margin: 0 auto;
+    transform: translateX(50%);
+}
+
+#navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navigation li a:hover {
+    background-color: #555;
+}
+
+/*mission*/
+.mission-content img{
+    float: left;
+    height: 300px;
+    margin: 4%;
+}
+
+.mission-content p{
+    text-align: left;
+}
+
+/*wishlist*/
+    #wishlist ul{
+        list-style-image: url("../img/mini-blk.png");
+    }
+
+    #wishlist li{
+        padding: 3%;
+    }
+
+    @media screen and (max-width:610px) {
+        .mission-content img{
+            height: auto;
+            width: calc(100% - 20px);
+        }
+    }
